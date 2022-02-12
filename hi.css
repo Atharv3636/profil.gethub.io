@@ -59,6 +59,17 @@ html{
 .navbar.sticky .menu li a:hover{
 	color: #fff;
 }
+.out {
+	color: #fff;
+	background: #000;
+	padding: 10px 25px;
+	cursor: pointer;
+	margin-left: 25xp;
+
+}
+button{
+	margin-left: 25px;
+}
 /*menu btn styling*/
 
 .menu-btn{
