@@ -95,6 +95,7 @@
                   })
 
                   alert('user logined in!');
+                   window.location.assign('hi.html');
                 // ...
               })
               .catch((error) => {
@@ -106,18 +107,7 @@
               });
               
         });
-      const user = auth.currentUser;
-        onAuthStateChanged(auth, (user) => {
-         if (user) {
-           // User is signed in, see docs for a list of available properties
-           // https://firebase.google.com/docs/reference/js/firebase.User
-           const uid = userCredential.uid;
-           window.location.assign('hi.html');
-         } else {
-           // User is signed out
-           // ...
-         }
-      });
+     
 
 
 
