@@ -152,6 +152,7 @@ button{
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.project .project-content,
 .contact .contact-content{
 	display: flex;
 	align-items: center;
@@ -458,6 +459,92 @@ footer span a:hover{
 	text-decoration: underline;
 }
 
+/* project section*/
+.project .title::after{
+	content: "My work";
+}
+.project .project-content .left{
+	width: 45%;
+}
+.project .project-content .left img{
+	height: 400px;
+	width: 400px;
+	object-fit: contain;
+	border-radius: 6px;
+}
+.project .project-content .right{
+	width: 55%;
+}
+.project .project-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.project .project-content .right .text span{
+	color: crimson;
+}
+.project .project-content .right p
+{
+	text-align: justify;
+}
+.project .project-content .right a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition:  all 0.3s ease;
+}
+.project .project-content .right a:hover{
+	color: crimson;
+	background: none;
+}
+
+/*2 project*/
+.project .project-content .left2{
+	width: 45%;
+}
+.project .project-content .right2 img{
+	height: 400px;
+	width: 400px;
+	object-fit: contain;
+	border-radius: 6px;
+}
+.project .project-content .left2{
+	width: 55%;
+}
+.project .project-content .left2 .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.project .project-content .left2 .text span{
+	color: crimson;
+}
+.project .project-content .left2 p
+{
+	text-align: justify;
+}
+.project .project-content .left2 a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition:  all 0.3s ease;
+}
+.project .project-content .left2 a:hover{
+	color: crimson;
+	background: none;
+}
 
 
 
@@ -475,7 +562,9 @@ footer span a:hover{
 }
 
 @media (max-width:1104px) {
-	.about .about-content .left img{
+	.about .about-content .left img,
+	.project .project-content .right2 img,
+	.project .project-content .left img{
 		height: 350px;
 		width: 350px;
 	}
@@ -547,6 +636,32 @@ footer span a:hover{
 	.skills .skills-content .column,
 	.contact .contact-content .column{
 		width: 100%;
+	}
+	.project .project-content .column{
+		width: 100%
+	}
+	.project2{
+		flex-direction: column-reverse;
+	}
+
+	.project .project-content .left{
+		display: flex;
+		margin: 0 auto 60px;
+		justify-content:center ;
+	}
+	
+	.project .project-content .right{
+		flex: 100%;
+	}
+	.project .project-content .right2{
+		display: flex;
+		margin: 0 auto 60px;
+		justify-content:center ;
+	}
+	
+	.project .project-content .left2
+	{
+		flex: 100%;
 	}
 }
 
