@@ -504,6 +504,8 @@ footer span a:hover{
 	background: none;
 }
 
+
+
 /*2 project*/
 .project .project-content .left2{
 	width: 45%;
@@ -545,7 +547,47 @@ footer span a:hover{
 	color: crimson;
 	background: none;
 }
-
+/*3*/
+.project .project-content .left3{
+	width: 45%;
+}
+.project .project-content .left3 img{
+	height: 400px;
+	width: 400px;
+	object-fit: contain;
+	border-radius: 6px;
+}
+.project .project-content .right3{
+	width: 55%;
+}
+.project .project-content .right3 .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.project .project-content .right3 .text span{
+	color: crimson;
+}
+.project .project-content .right3 p
+{
+	text-align: justify;
+}
+.project .project-content .right3 a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	transition:  all 0.3s ease;
+}
+.project .project-content .right3 a:hover{
+	color: crimson;
+	background: none;
+}
 
 
 
@@ -637,6 +679,7 @@ footer span a:hover{
 	.contact .contact-content .column{
 		width: 100%;
 	}
+	/*project part*/
 	.project .project-content .column{
 		width: 100%
 	}
@@ -649,14 +692,21 @@ footer span a:hover{
 		margin: 0 auto 60px;
 		justify-content:center ;
 	}
-	
-	.project .project-content .right{
-		flex: 100%;
-	}
 	.project .project-content .right2{
 		display: flex;
 		margin: 0 auto 60px;
 		justify-content:center ;
+	}
+	.project .project-content .left3{
+		display: flex;
+		margin: 25px auto 60px;
+		justify-content:center ;
+	}
+	.project .project-content .right{
+		flex: 100%;
+	}
+	.project .project-content .right3{
+		flex: 100%;
 	}
 	
 	.project .project-content .left2
