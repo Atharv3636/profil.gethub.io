@@ -38,6 +38,7 @@
         // create user data
         var user_data ={
             email:email,
+            name:username,
             last_login : Date.now()
         }
 
