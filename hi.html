@@ -223,8 +223,8 @@
         const auth = getAuth();
         
         function out(){
-		firebase.auth().signOut()
-		       window.location.assign("index.html")
+		firebase.auth().signOut();
+		       window.location.replace("index.html");
 		      }
 		
     
