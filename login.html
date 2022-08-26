@@ -91,7 +91,7 @@
                 
             const dt =new Date();
             update(ref(database,'users/'+ user.uid),{
-                      last_login: dt
+                      last_login: dt,
                   })
 
                   alert('user logined in!');
