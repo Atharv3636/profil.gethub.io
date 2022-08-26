@@ -23,7 +23,8 @@
 				<li><a href="#services">Services</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#contact">Contact</a></li>
-                <button onclick="logout()" class="out">out</button>
+                <button onclick="out()"  class="out">out</button>
+				
 		    </ul>
 			<div class="menu-btn">
 				<i class="fa fa-bars"></i>
@@ -221,10 +222,11 @@
         const database = getDatabase(app);
         const auth = getAuth();
         
-        function logout(){
-           firebase.auth().signOut()
-           window.location.assign("index.html");
-         }
+        function out(){
+		firebase.auth().signOut()
+		       window.location.assign("index.html")
+		      }
+		
     
     
    
