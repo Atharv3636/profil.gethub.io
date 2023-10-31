@@ -23,7 +23,8 @@
 				<li><a href="#services">Services</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#contact">Contact</a></li>
-                <button id="signuot" class="out">out</button>
+                <button onclick="out()"  class="out">out</button>
+				
 		    </ul>
 			<div class="menu-btn">
 				<i class="fa fa-bars"></i>
@@ -220,18 +221,12 @@
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         const auth = getAuth();
-
-
-        const signOutfunction = ()=>{
-            auth.signOut()
-            .then(() => {
-                window.location.assign('index.html');
-            }).catch((error) => {
-                console.error(error);
-            });
-        }
-    
-    signuot.addEventListener('click',signOutfunction);
+        
+        function out(){
+		firebase.auth().signOut();
+		       window.location.replace("index.html");
+		      }
+		
     
     
    

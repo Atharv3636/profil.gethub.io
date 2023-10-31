@@ -19,8 +19,10 @@
 
   //set up reg function
   function reg() {
-      email = document.getElementById('email').value 
-      password = document.getElementById('password').value
+           var name = document.getElementById('username').value;
+            var email = document.getElementById('email').value ;
+            var password = document.getElementById('password').value;
+
 
     // validate input f
     if (validate_email(email) == false ||validate_password(password) == false) {
@@ -36,6 +38,7 @@
         // create user data
         var user_data ={
             email:email,
+            name:username,
             last_login : Date.now()
         }
 
