@@ -298,8 +298,9 @@ section .title::after{
 	color: #000;
 	cursor:pointer;
 	}
-	.skills-box:hover > .skills-title: after, 
-	.skills-box:hover > .skills-title: before{
+	.skills-box:hover > .skills-title::after, 
+	.skills-box:hover > .skills-title::before
+	{
 	width: 30px;
 	}
 	.skills-box:hover .skills-img{
