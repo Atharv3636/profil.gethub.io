@@ -246,7 +246,7 @@ section .title::after{
 	background: #fff;
 }
 .services .title::after{
-	content: "what i provide";
+	content: "What i can do";
 	background: #111;
 }
 .services .serv-content .card{
