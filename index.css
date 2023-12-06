@@ -319,7 +319,7 @@ section .title::after{
 	content: '';
 	position:absolute;
 	bottom: 0;
-	rigth: 50%;
+	right: 50%;
 	width:20px;
 	height:4px;
 	border-radius: 2px 0 0 2px;
