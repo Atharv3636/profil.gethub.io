@@ -282,7 +282,12 @@ section .title::after{
 
 }
 /* temp*/
-
+.skills-header{
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+	}
 .skills-container{
 	display: grid;
 	grid-tempLate-columns: repeat(3, 1fr);
